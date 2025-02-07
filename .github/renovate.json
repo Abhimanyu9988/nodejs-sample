@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["^node$"],
+      "groupName": "Node.js base image updates"
+    },
+    {
+      "matchManagers": ["npm"],
+      "groupName": "npm dependencies"
+    }
+  ]
+}
+
