@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-sample-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js hello world",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
+
