@@ -1,15 +1,22 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:recommended"
+  ],
   "packageRules": [
     {
-      "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["^node$"],
-      "groupName": "Node.js base image updates"
+      "matchDatasources": [
+        "docker"
+      ],
+      "groupName": "Node.js base image updates",
+      "matchPackageNames": [
+        "/^node$/"
+      ]
     },
     {
-      "matchManagers": ["npm"],
+      "matchManagers": [
+        "npm"
+      ],
       "groupName": "npm dependencies"
     }
   ]
 }
-
